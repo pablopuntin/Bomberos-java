@@ -1,0 +1,8 @@
+com/mycompany/bomberos/persistencia/exceptions/PreexistingEntityException.class
+com/mycompany/bomberos/logica/Socio.class
+com/mycompany/bomberos/persistencia/exceptions/NonexistentEntityException.class
+com/mycompany/bomberos/persistencia/ControladoraPersistencia.class
+com/mycompany/bomberos/persistencia/SocioJpaController.class
+com/mycompany/bomberos/persistencia/exceptions/IllegalOrphanException.class
+com/mycompany/bomberos/logica/Socio_.class
+com/mycompany/bomberos/Bomberos.class
