@@ -1,0 +1,7 @@
+/home/pablo/NetBeansProjects/bomberos/src/main/java/com/mycompany/bomberos/persistencia/exceptions/PreexistingEntityException.java
+/home/pablo/NetBeansProjects/bomberos/src/main/java/com/mycompany/bomberos/persistencia/exceptions/NonexistentEntityException.java
+/home/pablo/NetBeansProjects/bomberos/src/main/java/com/mycompany/bomberos/persistencia/exceptions/IllegalOrphanException.java
+/home/pablo/NetBeansProjects/bomberos/src/main/java/com/mycompany/bomberos/persistencia/ControladoraPersistencia.java
+/home/pablo/NetBeansProjects/bomberos/src/main/java/com/mycompany/bomberos/persistencia/SocioJpaController.java
+/home/pablo/NetBeansProjects/bomberos/src/main/java/com/mycompany/bomberos/logica/Socio.java
+/home/pablo/NetBeansProjects/bomberos/src/main/java/com/mycompany/bomberos/Bomberos.java
