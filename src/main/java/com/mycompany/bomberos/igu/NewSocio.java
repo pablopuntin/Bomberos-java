@@ -294,13 +294,16 @@ public class NewSocio extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
-        
+                      
         String nombreSocio = txtNombre.getText();
         String apellidoSocio = txtApellido.getText();
         String dirSocio = txtDir.getText();
         String dniSocio = txtDni.getText();
         String codAreaSocio = txtCodArea.getText();
         String telSocio = txtTel.getText();
+        
+        if (!nombreSocio.isEmpty() && !apellidoSocio.isEmpty() && !dirSocio.isEmpty() && !dniSocio.isEmpty() && !codAreaSocio.isEmpty() && !telSocio.isEmpty() ) {
+        
         
         control.crearSocio(nombreSocio, apellidoSocio, dirSocio, dniSocio, codAreaSocio, telSocio);
         
@@ -310,6 +313,19 @@ public class NewSocio extends javax.swing.JFrame {
         dialog.setAlwaysOnTop(true);
         dialog.setVisible(true);
         
+        txtNombre.setText("");
+        txtApellido.setText("");
+        txtDir.setText("");
+        txtDni.setText("");
+        txtCodArea.setText("");
+        txtTel.setText("");
+    }else{
+            JOptionPane optionPane = new JOptionPane ("Debe completar todos los registros");
+        optionPane.setMessageType(JOptionPane.INFORMATION_MESSAGE);
+        JDialog dialog = optionPane.createDialog("guardado exitoso");
+        dialog.setAlwaysOnTop(true);
+        dialog.setVisible(true);
+            }
         
         
         
@@ -319,7 +335,7 @@ public class NewSocio extends javax.swing.JFrame {
          Principal prin = new Principal();
        prin.setVisible(true);
        prin.setLocationRelativeTo(null);
-       this.setVisible(false);
+       this.dispose();
         
         
     }//GEN-LAST:event_btnVolverActionPerformed

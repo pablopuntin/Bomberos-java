@@ -38,6 +38,26 @@ public class ControladoraLogica {
        
     }
 
+    public Socio traerSocioModif(int idSocio) {
+        
+        return controlPersis.traerSocioModif(idSocio);
+        
+    }
+
+    public void modificarSocio(Socio socio,String nombre,String direccion,String apellido,String dni,String codArea,String telefono) {
+        //Eteamos los datos nuevos en el socio
+        socio.setNombre(nombre);
+        socio.setApellido(apellido);
+        socio.setDireccion(direccion);
+        socio.setDni(dni);
+        socio.setCodigoArea(codArea);
+        socio.setTel(telefono);
+        
+        //le pido a persis que modifique
+        controlPersis.modificarsocio(socio);
+
+    }
+
     
     
 
